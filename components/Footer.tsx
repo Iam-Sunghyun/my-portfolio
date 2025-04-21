@@ -9,7 +9,7 @@ function Footer() {
         theme ? "bg-blue-100 text-stone-700" : "bg-black-100 text-stone-300"
       }`}
     >
-      © 2025 Sunghyun's Portfolio
+      © 2025 Sunghyun&apos;s Portfolio
     </footer>
   );
 }

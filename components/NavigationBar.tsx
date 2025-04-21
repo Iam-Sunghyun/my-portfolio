@@ -2,7 +2,6 @@
 
 import { useThemes } from "@/context/ThemeProvider";
 import Link from "next/link";
-import { useEffect } from "react";
 import { AiOutlineHome } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
 import { HiOutlineWrench } from "react-icons/hi2";
