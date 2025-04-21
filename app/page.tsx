@@ -25,7 +25,7 @@ export default function Home() {
       }
     }
     window.onscroll = scrolled;
-  }, []); // 페이지 초기 렌더링 시에만 실행
+  }, [setScroll]); // 페이지 초기 렌더링 시에만 실행
 
   return (
     // 다크모드를 위한 전체 랩핑 div

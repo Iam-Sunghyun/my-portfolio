@@ -85,10 +85,10 @@ function Page() {
         <br />
         <br />
         <h3>방금 추가한 음악을 삭제후 동일한 음악을 다시 추가했을 시 추가되지 않는 문제</h3>
-        input[type="file"] 요소에 같은 파일을 업로드 하면 onChange 이벤트가 발생하지 않는다. 따라서
-        파일 sessionStorage에 저장 후 input[type="file"]의 값을 가리키는 event.target.value를 null로
-        초기화해주어 동일한 파일이 삭제 후 다시 업로드 되어도 onChange 이벤트가 발생하지 않는 일이
-        없도록 해주었다.
+        input[type{'="'}file{'"'}] 요소에 같은 파일을 업로드 하면 onChange 이벤트가 발생하지 않는다.
+        따라서 파일 sessionStorage에 저장 후 input[type{'="'}file{'"'}]의 값을 가리키는
+        event.target.value를 null로 초기화해주어 동일한 파일이 삭제 후 다시 업로드 되어도 onChange
+        이벤트가 발생하지 않는 일이 없도록 해주었다.
         <br />
         <br />
         <h3>
