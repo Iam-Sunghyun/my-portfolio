@@ -14,7 +14,10 @@ function ThemeProvider({
   return <ThemeContext.Provider value={{ theme, setTheme }}>{children}</ThemeContext.Provider>;
 }
 
-function useThemes(): { theme: boolean; setTheme: Function } | null {
+function useThemes(): {
+  theme: boolean;
+  setTheme: Function;
+} | null {
   const Context = useContext(ThemeContext);
 
   if (Context === undefined) {

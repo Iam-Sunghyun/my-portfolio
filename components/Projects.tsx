@@ -28,7 +28,7 @@ const Projects = () => {
                   <ItemList lists={project.skills} className="mb-5 mt-5 " />
                 </div>
                 <div>
-                  <h2>주요 기능</h2>
+                  <h2 className="mt-6">주요 기능</h2>
                   <ul className="mt-6 leading-9 ">
                     {project.description.map((des) => (
                       <li key={des}>{des}</li>

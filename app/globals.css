@@ -78,6 +78,9 @@
   button {
     @apply active:outline-none;
   }
+  .ul-li-style li {
+    @apply font-bold;
+  }
   h1 {
     font-weight: bold;
     font-size: 1.7rem;

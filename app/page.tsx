@@ -7,14 +7,13 @@ import Projects from "@/components/Projects";
 import Skils from "@/components/Skils";
 import HorizentalLine from "@/components/ui/HorizentalLine";
 import ScrollToTopButton from "@/components/ui/ScrollToTopButton";
+import { useScroll } from "@/context/ScrollProvider";
 import { useThemes } from "@/context/ThemeProvider";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export default function Home() {
-  const { theme } = useThemes(); // 다크모드용 Context 값
-
-  const [scroll, setScroll] = useState(false);
-
+  const { theme } = useThemes();
+  const { scroll, setScroll } = useScroll();
   // 페이지 맨 위에서 300픽셀 초과 스크롤되면 scroll = true
   useEffect(() => {
     function scrolled() {
@@ -37,7 +36,7 @@ export default function Home() {
     >
       <NavigationBar />
       <main
-        className={`flex flex-col mx-12 md:px-20 lg:px-48 xl:px-[22rem] overflow-hidden text-2xl sm:text-3xl gap-20`}
+        className={`flex flex-col mx-12 md:px-20 lg:px-48 xl:px-[22rem] overflow-hidden text-2xl sm:text-3xl gap-72`}
       >
         <Landing />
 

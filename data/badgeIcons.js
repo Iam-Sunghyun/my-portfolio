@@ -61,6 +61,12 @@ export const sub = [
     image: "https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=Redux&logoColor=white",
     description: "Redux",
   },
+  {
+    name: "Redux",
+    image:
+      "https://img.shields.io/badge/css--modules-ffffff?style=flat-square&logo=cssmodules&logoColor=black",
+    description: "Redux",
+  },
 ];
 
 export const experienced = [

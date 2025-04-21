@@ -22,7 +22,8 @@ export const projects = [
   {
     name: "포트폴리오 웹 사이트",
     image: "",
-    skills: ["Nextjs 14", "Context-API", "tailwindCSS"],
-    description: ["다크모드", "-test2"],
+    skills: ["Nextjs 14", "Typescript", "Context-API", "tailwindCSS", "AceternityUI"],
+    description: ["다크모드", "랜딩 페이지", "플로팅 네비게이션바", "반응형"],
+    link: "projects/my-portfolio",
   },
 ];
