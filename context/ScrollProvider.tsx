@@ -2,7 +2,13 @@
 "use client";
 import { createContext, useContext, useState } from "react";
 
-const ScrollContext = createContext(null);
+const ScrollContext = createContext<{
+  scroll: boolean;
+  setScroll: React.Dispatch<React.SetStateAction<boolean>>;
+}>({
+  scroll: false,
+  setScroll: () => {},
+});
 
 function ScrollProvider({
   children,
@@ -14,10 +20,7 @@ function ScrollProvider({
   return <ScrollContext.Provider value={{ scroll, setScroll }}>{children}</ScrollContext.Provider>;
 }
 
-function useScroll(): {
-  scroll?: boolean;
-  setScroll?: Function;
-} | null {
+function useScroll() {
   const Context = useContext(ScrollContext);
 
   if (Context === undefined) {

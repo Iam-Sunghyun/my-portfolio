@@ -2,7 +2,13 @@
 "use client";
 import { useContext, useState, createContext } from "react";
 
-const ThemeContext = createContext(null);
+const ThemeContext = createContext<{
+  theme: boolean;
+  setTheme: React.Dispatch<React.SetStateAction<boolean>>;
+}>({
+  theme: true,
+  setTheme: () => {},
+});
 
 function ThemeProvider({
   children,
@@ -14,10 +20,7 @@ function ThemeProvider({
   return <ThemeContext.Provider value={{ theme, setTheme }}>{children}</ThemeContext.Provider>;
 }
 
-function useThemes(): {
-  theme?: boolean;
-  setTheme?: Function;
-} | null {
+function useThemes() {
   const Context = useContext(ThemeContext);
 
   if (Context === undefined) {
