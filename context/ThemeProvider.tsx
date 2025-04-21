@@ -15,8 +15,8 @@ function ThemeProvider({
 }
 
 function useThemes(): {
-  theme: boolean;
-  setTheme: Function;
+  theme?: boolean;
+  setTheme?: Function;
 } | null {
   const Context = useContext(ThemeContext);
 

@@ -15,8 +15,8 @@ function ScrollProvider({
 }
 
 function useScroll(): {
-  scroll: boolean;
-  setScroll: Function;
+  scroll?: boolean;
+  setScroll?: Function;
 } | null {
   const Context = useContext(ScrollContext);
 
