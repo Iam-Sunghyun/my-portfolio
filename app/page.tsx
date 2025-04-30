@@ -2,7 +2,7 @@
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Landing from "@/components/Landing";
-import NavigationBar from "@/components/NavigationBar";
+import NavBar from "@/components/NavBar";
 import Projects from "@/components/Projects";
 import Skils from "@/components/Skils";
 import HorizentalLine from "@/components/ui/HorizentalLine";
@@ -14,6 +14,7 @@ import { useEffect } from "react";
 export default function Home() {
   const { theme } = useThemes();
   const { scroll, setScroll } = useScroll();
+
   // 페이지 맨 위에서 300픽셀 초과 스크롤되면 scroll = true
   useEffect(() => {
     function scrolled() {
@@ -34,7 +35,7 @@ export default function Home() {
         theme ? "text-stone-700" : "bg-black-400 text-stone-300 border-white"
       }  flex flex-col text-center`}
     >
-      <NavigationBar />
+      <NavBar />
       <main
         className={`flex flex-col mx-12 md:px-20 lg:px-48 xl:px-[22rem] overflow-hidden text-2xl sm:text-3xl gap-72`}
       >
