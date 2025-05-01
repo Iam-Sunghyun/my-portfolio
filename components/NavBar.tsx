@@ -1,18 +1,6 @@
 "use client";
-import {
-  MobileNav,
-  MobileNavHeader,
-  MobileNavMenu,
-  MobileNavToggle,
-  Navbar,
-  NavbarButton,
-  NavbarLogo,
-  NavBody,
-  NavItems,
-} from "@/components/ui/Resizable-Navbar";
+import { Navbar, NavBody, NavItems } from "@/components/ui/Resizable-Navbar";
 import { useThemes } from "@/context/ThemeProvider";
-import { useState } from "react";
-import ThemeToggleButton from "./ui/ThemeToggleButton";
 
 export default function NavBar() {
   const { theme } = useThemes();
