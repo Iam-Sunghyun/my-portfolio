@@ -1,6 +1,7 @@
 "use client";
 import { Navbar, NavBody, NavItems } from "@/components/ui/Resizable-Navbar";
 import { useThemes } from "@/context/ThemeProvider";
+import NavigationBar from "./NavigationBar";
 
 export default function NavBar() {
   const { theme } = useThemes();
@@ -23,52 +24,44 @@ export default function NavBar() {
       link: "/#Contact",
     },
   ];
+  // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <Navbar>
-      {/* Desktop Navigation */}
-      <NavBody className={`${theme ? "bg-white" : "bg-black-100 "} h-[3.5rem] bg-transparent`}>
-        <NavItems
-          className={`${theme ? "" : "text-white hover:text-gray-800"} text-xl gap-10 font-bold`}
-          items={navItems}
-        />
-        {/* <div className="flex items-center gap-4">
+    <>
+      <Navbar className="hidden xs:block">
+        {/* Desktop Navigation */}
+        <NavBody className={`${theme ? "bg-white" : "bg-black-100 "} h-[3.5rem] bg-transparent`}>
+          <NavItems
+            className={`${
+              theme ? "" : "text-white hover:text-gray-800"
+            } text-xl gap-10  hidden min-[520px]:flex`}
+            items={navItems}
+          />
+          {/* <div className="flex items-center gap-4">
           <NavbarButton variant="secondary">Login</NavbarButton>
           <NavbarButton variant="primary">Book a call</NavbarButton>
-        </div> */}
-      </NavBody>
-
-      {/*       
-      <MobileNav>
-        <MobileNavHeader>
-          <MobileNavToggle
-            isOpen={isMobileMenuOpen}
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          />
-        </MobileNavHeader>
-
-        <MobileNavMenu isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)}>
-          {navItems.map((item, idx) => (
-            <a
-              key={`mobile-link-${idx}`}
-              href={item.link}
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="relative text-neutral-600 dark:text-neutral-300"
+          </div> */}
+          {/* <div
+          className={`flex gap-14 justify-center text-2xl tracking-wider pl-2 items-center ${
+            theme ? "text-stone-600" : "text-white"
+            } mx-auto`}
             >
-              <span className="block">{item.name}</span>
-            </a>
-          ))}
-          <div className="flex w-full flex-col gap-4">
-            <NavbarButton
-              onClick={() => setIsMobileMenuOpen(false)}
-              variant="primary"
-              className="w-full"
-            >
-              Login
-            </NavbarButton>
-          </div>
-        </MobileNavMenu>
-      </MobileNav> */}
-    </Navbar>
+            <Link href="/#Home" className="xs:hidden hover:scale-110">
+            <AiOutlineHome />
+            </Link>
+            <Link href="/#Info" className="xs:hidden hover:scale-110">
+            <HiOutlineWrench />
+            </Link>
+            <Link href="/#Projects" className="xs:hidden hover:scale-110">
+            <BiBook />
+            </Link>
+            <Link href="/#Contact" className="xs:hidden hover:scale-110">
+            <MdOutlinePersonOutline />
+            </Link>
+            </div> */}
+        </NavBody>
+      </Navbar>
+      <NavigationBar />
+    </>
   );
 }

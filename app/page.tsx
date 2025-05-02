@@ -1,19 +1,19 @@
 "use client";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import Landing from "@/components/Landing";
+import HeroSectionOne from "@/components/Hero-Section";
 import NavBar from "@/components/NavBar";
 import Projects from "@/components/Projects";
 import Skils from "@/components/Skils";
 import HorizentalLine from "@/components/ui/HorizentalLine";
 import ScrollToTopButton from "@/components/ui/ScrollToTopButton";
-import { useScroll } from "@/context/ScrollProvider";
+import { useScrolls } from "@/context/ScrollProvider";
 import { useThemes } from "@/context/ThemeProvider";
 import { useEffect } from "react";
 
 export default function Home() {
   const { theme } = useThemes();
-  const { scroll, setScroll } = useScroll();
+  const { scroll, setScroll } = useScrolls();
 
   // 페이지 맨 위에서 300픽셀 초과 스크롤되면 scroll = true
   useEffect(() => {
@@ -37,19 +37,18 @@ export default function Home() {
     >
       <NavBar />
       <main
-        className={`flex flex-col mx-12 md:px-20 lg:px-48 xl:px-[22rem] overflow-hidden text-2xl sm:text-3xl gap-72`}
+        className={`flex flex-col mx-12 md:px-20 lg:px-48 xl:px-[18rem] overflow-hidden text-2xl sm:text-3xl gap-40 lg:gap-28 flex-grow`}
       >
-        <Landing />
-
-        <div id="Info" className="flex flex-col md:flex-row gap-14 ">
-          <div className="flex-1">
-            <HorizentalLine text="Info" />
-            <p className="text-xl">
-              1994.11.19
-              <br />
-              컴퓨터공학과 졸
-            </p>
-          </div>
+        {/* <Landing /> */}
+        <HeroSectionOne />
+        <div id="Info" className="flex flex-col  gap-14 ">
+          <HorizentalLine text="Info" />
+          <p className="text-xl">컴퓨터공학과 졸</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius assumenda corrupti
+            doloribus alias ipsam quod necessitatibus, magni suscipit repellat at ducimus
+            dignissimos officia voluptatum sequi, provident beatae nobis, ipsum dolorum.
+          </p>
           <Skils />
         </div>
 

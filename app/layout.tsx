@@ -21,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="flex flex-col min-h-screen" lang="ko">
-      <body className={` ${nanumGothic.className} antialiased scrollbar flex-grow`}>
+    <html lang="ko">
+      <body className={` ${nanumGothic.className}  antialiased scrollbar `}>
         <ScrollProvider>
           <ThemeProvider>{children}</ThemeProvider>
         </ScrollProvider>

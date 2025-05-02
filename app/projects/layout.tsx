@@ -3,12 +3,13 @@
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import ScrollToTopButton from "@/components/ui/ScrollToTopButton";
-import { useScroll } from "@/context/ScrollProvider";
+import { useScrolls } from "@/context/ScrollProvider";
 import { useThemes } from "@/context/ThemeProvider";
 
 function Layout({ children }: { children: React.ReactNode }) {
   const { theme } = useThemes();
-  const { scroll } = useScroll();
+  const { scroll } = useScrolls();
+
   return (
     <div
       className={`${
@@ -18,7 +19,7 @@ function Layout({ children }: { children: React.ReactNode }) {
       {/* <NavigationBar /> */}
       <NavBar />
       <main
-        className={`flex flex-col mt-16 mb-10 mx-6 md:px-28 lg:px-40 xl:px-60 2xl:px-96 overflow-hidden text-lg sm:text-xl gap-10 flex-grow`}
+        className={`flex flex-col pt-16 mb-10 mx-6 md:px-28 lg:px-40 xl:px-60 2xl:px-96 overflow-hidden text-lg sm:text-xl gap-10 flex-grow`}
       >
         {children}
       </main>

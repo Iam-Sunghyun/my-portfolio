@@ -73,6 +73,12 @@ function Page() {
         </p>
       </div>
 
+      <div className="leading-8">
+        <h2>✅ 기술 선택 이유?</h2>
+        <br />
+        <p></p>
+      </div>
+
       <br />
       <div className="flex flex-col gap-5">
         <h2 className="mb-4">✅ 트러블 슈팅 </h2>

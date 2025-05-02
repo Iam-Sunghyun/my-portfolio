@@ -5,13 +5,13 @@ import Link from "next/link";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 const ToProjectButton = ({
-  title,
+  // title,
   // handleClick,
-  otherClasses,
+  className,
 }: {
-  title: string;
+  // title: string;
   // handleClick?: () => void;
-  otherClasses?: string;
+  className?: string;
 }) => {
   const { theme } = useThemes();
 
@@ -29,9 +29,9 @@ const ToProjectButton = ({
       <span
         className={`inline-flex h-[98%] w-[99%]  items-center justify-center rounded-xl text-xl font-medium ${
           theme ? "text-stone-600 bg-white" : "text-white bg-black-400"
-        } backdrop-blur-3xl tracking-wide ${otherClasses} gap-3`}
+        } backdrop-blur-3xl tracking-wide ${className} gap-3`}
       >
-        {title}
+        {"프로젝트"}
         <MdKeyboardArrowDown />
       </span>
     </Link>

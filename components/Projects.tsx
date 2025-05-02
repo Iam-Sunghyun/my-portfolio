@@ -1,9 +1,9 @@
 import { projects } from "@/data/projects";
-import Card from "./ui/Card";
-import ItemList from "./ui/ItemList";
-import HorizentalLine from "./ui/HorizentalLine";
 import Image from "next/image";
 import Link from "next/link";
+import Card from "./ui/Card";
+import HorizentalLine from "./ui/HorizentalLine";
+import ItemList from "./ui/ItemList";
 
 const Projects = () => {
   return (

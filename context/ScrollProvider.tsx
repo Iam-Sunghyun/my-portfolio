@@ -20,7 +20,7 @@ function ScrollProvider({
   return <ScrollContext.Provider value={{ scroll, setScroll }}>{children}</ScrollContext.Provider>;
 }
 
-function useScroll() {
+function useScrolls() {
   const Context = useContext(ScrollContext);
 
   if (Context === undefined) {
@@ -29,4 +29,4 @@ function useScroll() {
   return Context;
 }
 
-export { ScrollProvider, useScroll };
+export { ScrollProvider, useScrolls };
