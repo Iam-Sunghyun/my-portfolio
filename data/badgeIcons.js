@@ -1,71 +1,87 @@
+import html5 from "/app/public/html5.webp";
+import css3 from "/app/public/css3.webp";
+import javascript from "/app/public/js.png";
+import typescript from "/app/public/typescript.png";
+import react from "/app/public/react.webp";
+import nextjs from "/app/public/nextjs.webp";
+import styledComponents from "/app/public/styled-components.png";
+import tailwindCSS from "/app/public/tailwindcss.png";
+import tanstackQuery from "/app/public/tanstack query.png";
+import redux from "/app/public/redux.png";
+import cssModules from "/app/public/css-modules-logo.png";
+import reactHookForm from "/app/public/react-hook-form.svg";
+import reactRouter from "/app/public/react-router.svg";
+
 export const main = [
   {
     name: "HTML5",
-    image:
-      "https://img.shields.io/badge/HTML5-E34F26.svg?style=flat-square&logo=html5&logoColor=white",
+    image: html5,
     description: "HTML5",
   },
   {
     name: "CSS3",
-    image:
-      "https://img.shields.io/badge/CSS3-1572B6.svg?style=flat-square&logo=css3&logoColor=white",
+    image: css3,
     description: "CSS3",
   },
   {
     name: "JavaScript",
-    image:
-      "https://img.shields.io/badge/Javascript-F7DF1E.svg?style=flat-square&logo=javascript&logoColor=20232a",
+    image: javascript,
     description: "JavaScript",
   },
   {
     name: "TypeScript",
-    image:
-      "https://img.shields.io/badge/Typescript-007ACC.svg?style=flat-square&logo=typescript&logoColor=white",
-    description: "React",
+    image: typescript,
+    description: "typescript",
   },
   {
     name: "React",
-    image: "https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white",
+    image: react,
     description: "React",
   },
   {
     name: "Next.js",
-    image:
-      "https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=Next.js&logoColor=white",
+    image: nextjs,
     description: "Next.js",
   },
 ];
 
 export const sub = [
   {
-    name: "Styled-components",
-    image:
-      "https://img.shields.io/badge/Styled--components-DB7093?style=flat-square&logo=styled-components&logoColor=ffd35b",
-    description: "Styled-components",
-  },
-  {
-    name: "Tailwind CSS",
-    image:
-      "https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=TailwindCSS&logoColor=white",
+    name: "TailwindCSS",
+    image: tailwindCSS,
 
     description: "Tailwind CSS",
   },
+
+  {
+    name: "Redux",
+    image: redux,
+    description: "Redux",
+  },
+  {
+    name: "Styled-components",
+    image: styledComponents,
+    description: "Styled-components",
+  },
   {
     name: "Tanstack Query",
-    image:
-      "https://img.shields.io/badge/Tanstack%20Query-FF4154?style=flat-square&logo=react%20query&logoColor=white",
+    image: tanstackQuery,
     description: "Tanstack Query",
   },
   {
-    name: "Redux",
-    image: "https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=Redux&logoColor=white",
-    description: "Redux",
+    name: "css-modules",
+    image: cssModules,
+    description: "css-modules",
   },
   {
-    name: "Redux",
-    image:
-      "https://img.shields.io/badge/css--modules-ffffff?style=flat-square&logo=cssmodules&logoColor=black",
-    description: "Redux",
+    name: "react-hook-form",
+    image: reactHookForm,
+    description: "react-hook-form",
+  },
+  {
+    name: "react-router",
+    image: reactRouter,
+    description: "react-router",
   },
 ];
 
