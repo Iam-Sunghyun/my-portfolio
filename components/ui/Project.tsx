@@ -6,10 +6,10 @@ interface ProjectProps {
   image: StaticImageData;
   skills: string[];
   description: string[];
-  link: string;
+  link?: string;
 }
 
-function Project({ name, image, skills, description, link }: ProjectProps) {
+function Project({ name, image, skills, description }: ProjectProps) {
   return (
     <article>
       <Card className="p-8 mx-2 bg-gray-50 hover:border-blue-400 flex flex-col sm:flex-row items-center text-lg h-[43rem] min-w-[25rem] sm:w-[43rem] sm:h-[24rem] md:w-[50rem] lg:w-[60rem] overflow-hidden relative hover:scale-[102%] transition-all duration-300">

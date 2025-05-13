@@ -1,11 +1,8 @@
 import { projects } from "@/data/projects";
-import Image from "next/image";
-import Link from "next/link";
-import Card from "./ui/Card";
-import HorizentalLine from "./ui/HorizentalLine";
-import ItemList from "./ui/ItemList";
-import Project from "./ui/Project";
 import { motion, Variants } from "framer-motion";
+import Link from "next/link";
+import HorizentalLine from "./ui/HorizentalLine";
+import Project from "./ui/Project";
 
 const fadeInAnimationVariants: Variants = {
   initial: {
@@ -46,7 +43,6 @@ const Projects = () => {
                 skills={project.skills}
                 image={project.image}
                 description={project.description}
-                link={project.link}
               />
               {/* <Card className="py-8 px-12 hover:border-blue-400 flex flex-col lg:flex-row lg:justify-between ">
               <div className="flex flex-col justify-center">
