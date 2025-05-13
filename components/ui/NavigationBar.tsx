@@ -6,18 +6,17 @@ import { AiOutlineHome } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
 import { HiOutlineWrench } from "react-icons/hi2";
 import { MdOutlinePersonOutline } from "react-icons/md";
-import ThemeToggleButton from "./ui/ThemeToggleButton";
+import ThemeToggleButton from "./ThemeToggleButton";
 
 // 작은 화면용 네비게이션바
 function NavigationBar() {
   const { theme } = useThemes();
 
   return (
-    // fixed 아니고 sticky로 설정한 이유는
-    // 문서 레이아웃에 배치되도록 하여 mx-auto를 적용해주기 위함(fixed로 가운데 위치시키면 살짝 애매해짐)
-    <nav className="xs:hidden rounded-full backdrop-blur-md sticky top-4 z-[999] mx-auto">
+    // fixed, top-0 left-0 right-0 mx-auto로 중앙 정렬
+    <nav className="xs:hidden rounded-full backdrop-blur-md fixed top-4 left-0 right-0 mx-auto z-[999] w-[21rem] ">
       <div
-        className={`flex justify-between py-3 px-8 text-xl items-center border border-stone-300 rounded-full shadow-md gap-4 ${
+        className={`flex justify-between py-3 px-8 text-xl items-center border border-stone-300 rounded-full shadow-md gap-6 ${
           theme || "bg-black-400 shadow-white"
         }`}
       >

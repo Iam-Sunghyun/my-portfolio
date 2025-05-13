@@ -27,14 +27,14 @@ export default function NavBar() {
   // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <>
-      <Navbar className="hidden xs:block">
+    <nav>
+      <Navbar className="hidden xs:block ">
         {/* Desktop Navigation */}
         <NavBody className={`${theme ? "bg-white" : "bg-black-100 "} h-[3.5rem] bg-transparent`}>
           <NavItems
             className={`${
               theme ? "" : "text-white hover:text-gray-800"
-            } text-xl gap-10  hidden min-[520px]:flex`}
+            } text-xl gap-10 hidden min-[510px]:flex`}
             items={navItems}
           />
           {/* <div className="flex items-center gap-4">
@@ -62,6 +62,6 @@ export default function NavBar() {
         </NavBody>
       </Navbar>
       <NavigationBar />
-    </>
+    </nav>
   );
 }
