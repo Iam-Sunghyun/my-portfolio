@@ -5,7 +5,7 @@ interface ProjectProps {
   name: string;
   image: StaticImageData | string;
   skills: string[];
-  description: string[];
+  description: string;
   link?: string;
 }
 
