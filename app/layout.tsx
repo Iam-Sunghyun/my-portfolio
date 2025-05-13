@@ -1,8 +1,8 @@
+import { ScrollProvider } from "@/context/ScrollProvider";
 import { ThemeProvider } from "@/context/ThemeProvider";
 import type { Metadata } from "next";
 import { Nanum_Gothic } from "next/font/google";
 import "./globals.css";
-import { ScrollProvider } from "@/context/ScrollProvider";
 
 const nanumGothic = Nanum_Gothic({
   weight: "400",

@@ -66,7 +66,7 @@ export const Navbar = ({ children, className }: NavbarProps) => {
     <motion.div
       ref={ref}
       // IMPORTANT: Change this to class of `fixed` if you want the navbar to be fixed
-      className={cn("sticky inset-x-0 top-2 z-40 w-full", className)}
+      className={cn("fixed inset-x-0 top-2 z-40 w-full", className)}
     >
       {React.Children.map(children, (child) =>
         React.isValidElement(child)
@@ -86,7 +86,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
         boxShadow: visible
           ? "0 0 24px rgba(34, 42, 53, 0.06), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.04), 0 0 4px rgba(34, 42, 53, 0.08), 0 16px 68px rgba(47, 48, 55, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1) inset"
           : "none",
-        width: visible ? "40%" : "100%",
+        width: visible ? "510px" : "100%",
         y: visible ? 10 : 0,
       }}
       transition={{
@@ -94,10 +94,10 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
         stiffness: 200,
         damping: 50,
       }}
-      style={{
-        minWidth: "510px",
-        maxWidth: "calc(100vw - 2rem)",
-      }}
+      // style={{
+      //   minWidth: "510px",
+      //   maxWidth: "calc(100vw - 2rem)",
+      // }}
       className={cn(
         "relative z-[60] mx-auto w-full flex-row items-center justify-between self-start rounded-full bg-transparent px-4 py-2 flex  dark:bg-transparent",
         visible && "bg-white/80 dark:bg-neutral-950/80",

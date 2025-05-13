@@ -10,7 +10,7 @@ function Card({
   const { theme } = useThemes();
   return (
     <div
-      className={`border rounded-lg  p-5 my-2 ${
+      className={`border rounded-lg ${
         theme ? "shadow-md" : "shadow-white-100 shadow-md"
       } ${className}`}
     >

@@ -4,7 +4,7 @@ import githubMark from "/app/public/github-mark.png";
 
 function Page() {
   return (
-    <div className="flex flex-col items-center gap-10 ">
+    <div className="flex flex-col items-center gap-10 pt-24">
       <h1>Music player</h1>
       <video className="border w-[60rem]" src="" />
       <div className="flex flex-col gap-2">

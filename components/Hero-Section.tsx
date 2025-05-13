@@ -8,26 +8,24 @@ export default function HeroSectionOne() {
   const { theme } = useThemes();
 
   return (
-    <div className="relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center ">
+    <section className="relative mx-auto mt-28 flex max-w-7xl flex-col items-center justify-center ">
       <div className=" px-4 py-10 md:py-20">
-        <h1 className="mt-10 relative z-10 mx-auto max-w-4xl text-center text-4xl font-bold text-gray-800 xs:text-5xl md:text-6xl lg:text-7xl">
-          {"안녕하세요! 프론트엔드 개발자 입니다. 예시문구 입니다."
-            .split(" ")
-            .map((word, index) => (
-              <motion.span
-                key={index}
-                initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
-                animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
-                transition={{
-                  duration: 0.3,
-                  delay: index * 0.1,
-                  ease: "easeInOut",
-                }}
-                className={`mr-3 mt-4 inline-block ${theme ? "" : "text-gray-300"}`}
-              >
-                {word}
-              </motion.span>
-            ))}
+        <h1 className="mt-28 relative z-10 mx-auto max-w-4xl text-center text-4xl font-bold text-gray-800 xs:text-5xl md:text-6xl lg:text-7xl">
+          {"안녕하세요! ".split(" ").map((word, index) => (
+            <motion.span
+              key={index}
+              initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
+              animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+              transition={{
+                duration: 0.3,
+                delay: index * 0.1,
+                ease: "easeInOut",
+              }}
+              className={`mr-3 mt-4 inline-block ${theme ? "" : "text-gray-300"}`}
+            >
+              {word}
+            </motion.span>
+          ))}
         </h1>
         {/* <motion.p
           initial={{
@@ -61,6 +59,6 @@ export default function HeroSectionOne() {
           <ToProjectButton className="w-60 transform rounded-lg border border-gray-300  px-6 py-2 font-medium text-black transition-all duration-300 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900" />
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 }
