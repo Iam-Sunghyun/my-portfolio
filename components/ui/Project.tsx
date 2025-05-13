@@ -3,7 +3,7 @@ import Card from "./Card";
 
 interface ProjectProps {
   name: string;
-  image: StaticImageData;
+  image: StaticImageData | string;
   skills: string[];
   description: string[];
   link?: string;
