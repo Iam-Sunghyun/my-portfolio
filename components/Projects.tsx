@@ -3,6 +3,7 @@ import { motion, Variants } from "framer-motion";
 import Link from "next/link";
 import HorizentalLine from "./ui/HorizentalLine";
 import Project from "./ui/Project";
+import { useThemes } from "@/context/ThemeProvider";
 
 const fadeInAnimationVariants: Variants = {
   initial: {
@@ -18,6 +19,7 @@ const fadeInAnimationVariants: Variants = {
 };
 
 const Projects = () => {
+  const { theme } = useThemes(); // 다크모드 context
   return (
     <section id="Projects">
       <HorizentalLine text="Projects" />
@@ -43,6 +45,7 @@ const Projects = () => {
                 skills={project.skills}
                 image={project.image}
                 description={project.description}
+                theme={theme}
               />
               {/* <Card className="py-8 px-12 hover:border-blue-400 flex flex-col lg:flex-row lg:justify-between ">
               <div className="flex flex-col justify-center">
