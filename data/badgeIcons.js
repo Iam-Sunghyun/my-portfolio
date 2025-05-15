@@ -29,10 +29,12 @@ export const main = [
     description: "JavaScript",
   },
   {
-    name: "TypeScript",
-    image: typescript,
-    description: "typescript",
+    name: "TailwindCSS",
+    image: tailwindCSS,
+
+    description: "Tailwind CSS",
   },
+
   {
     name: "React",
     image: react,
@@ -47,12 +49,10 @@ export const main = [
 
 export const sub = [
   {
-    name: "TailwindCSS",
-    image: tailwindCSS,
-
-    description: "Tailwind CSS",
+    name: "TypeScript",
+    image: typescript,
+    description: "typescript",
   },
-
   {
     name: "Redux",
     image: redux,

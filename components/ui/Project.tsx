@@ -15,8 +15,8 @@ function Project({ name, image, skills, description, theme }: ProjectProps) {
     <article>
       <Card
         className={`p-8 mx-2 ${
-          theme && "bg-gray-50"
-        } hover:border-blue-400 flex flex-col sm:flex-row items-center text-lg  min-w-[20rem] sm:w-[43rem] sm:h-[24rem] md:w-[50rem] lg:w-[60rem] overflow-hidden relative hover:bg-gray-100 group`}
+          theme ? "bg-gray-50 hover:bg-gray-100" : " hover:bg-gray-800"
+        } hover:border-blue-400 flex flex-col sm:flex-row items-center text-lg  min-w-[20rem] sm:w-[43rem] sm:h-[24rem] md:w-[50rem] lg:w-[60rem] overflow-hidden relative  group`}
       >
         <div className="flex items-center flex-col gap-8  lg:gap-10 sm:w-[17rem] md:w-[19rem] lg:w-[20rem]">
           <Image

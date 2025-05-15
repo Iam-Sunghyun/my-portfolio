@@ -27,6 +27,7 @@ export const projects = [
       "Nextjs 14",
       "Typescript",
       "Context-API",
+      "LocalStorage",
       "tailwindCSS",
       "AceternityUI",
       "framer-motion",

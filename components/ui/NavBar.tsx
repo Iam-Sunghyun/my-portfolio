@@ -3,28 +3,27 @@ import { Navbar, NavBody, NavItems } from "@/components/ui/Resizable-Navbar";
 import { useThemes } from "@/context/ThemeProvider";
 import NavigationBar from "./NavigationBar";
 
+const navItems = [
+  {
+    name: "Home",
+    link: "/#Home",
+  },
+  {
+    name: "Info",
+    link: "/#Info",
+  },
+  {
+    name: "Projects",
+    link: "/#Projects",
+  },
+  {
+    name: "Contact",
+    link: "/#Contact",
+  },
+];
+
 export default function NavBar() {
   const { theme } = useThemes();
-
-  const navItems = [
-    {
-      name: "Home",
-      link: "/#Home",
-    },
-    {
-      name: "Info",
-      link: "/#Info",
-    },
-    {
-      name: "Projects",
-      link: "/#Projects",
-    },
-    {
-      name: "Contact",
-      link: "/#Contact",
-    },
-  ];
-  // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <nav>
