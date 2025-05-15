@@ -1,9 +1,18 @@
 "use client";
 
 import { useThemes } from "@/context/ThemeProvider";
+import { useEffect } from "react";
 
 function ThemeToggleButton() {
   const { theme, setTheme } = useThemes();
+
+  useEffect(() => {
+    if (theme) {
+      localStorage.setItem("theme", "true");
+    } else {
+      localStorage.setItem("theme", "false");
+    }
+  }, [theme]);
 
   return (
     <button

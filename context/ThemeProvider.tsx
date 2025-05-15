@@ -1,6 +1,6 @@
 // 다크모드 Context provider
 "use client";
-import { useContext, useState, createContext } from "react";
+import { useContext, useState, createContext, useEffect } from "react";
 
 const ThemeContext = createContext<{
   theme: boolean;
@@ -15,7 +15,22 @@ function ThemeProvider({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [theme, setTheme] = useState(true);
+  const [theme, setTheme] = useState<boolean>(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("theme") === "true";
+    }
+    return true;
+  }); // 게으른 초기화
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme === "true") {
+      setTheme(true);
+    } else {
+      setTheme(false);
+      localStorage.setItem("theme", "false");
+    }
+  }, []);
 
   return <ThemeContext.Provider value={{ theme, setTheme }}>{children}</ThemeContext.Provider>;
 }
