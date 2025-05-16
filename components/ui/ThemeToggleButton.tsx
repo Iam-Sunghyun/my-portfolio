@@ -17,7 +17,7 @@ function ThemeToggleButton() {
   return (
     <button
       className="border rounded-3xl hover:scale-110 hover:bg-stone-100 hover:border-gray-800 transition-all"
-      onClick={() => setTheme((val: boolean) => !val)}
+      onClick={() => setTheme((val) => !val)}
     >
       {theme ? "🌙" : "☀️"}
     </button>
