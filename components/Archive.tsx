@@ -1,9 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
+import { SiGithub } from "react-icons/si";
 import Card from "./ui/Card";
 import HorizentalLine from "./ui/HorizentalLine";
-import githubMark from "/app/public/github-mark.png";
-import { SiGithub } from "react-icons/si";
 
 function Archive() {
   return (
