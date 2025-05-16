@@ -9,8 +9,8 @@ const navItems = [
     link: "/#Home",
   },
   {
-    name: "Info",
-    link: "/#Info",
+    name: "About",
+    link: "/#About",
   },
   {
     name: "Projects",
