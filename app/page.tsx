@@ -1,8 +1,8 @@
 "use client";
+import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import HeroSectionOne from "@/components/Hero-Section";
-import Info from "@/components/Info";
 import Projects from "@/components/Projects";
 import Skils from "@/components/Skils";
 import NavBar from "@/components/ui/NavBar";
@@ -10,6 +10,7 @@ import ScrollToTopButton from "@/components/ui/ScrollToTopButton";
 import { useScrolls } from "@/context/ScrollProvider";
 import { useThemes } from "@/context/ThemeProvider";
 import { useEffect } from "react";
+import Archive from "@/components/Archive";
 
 export default function Home() {
   const { theme } = useThemes();
@@ -37,13 +38,14 @@ export default function Home() {
     >
       <NavBar />
       <main
-        className={`flex flex-col mx-12 md:px-20 lg:px-48 xl:px-[18rem] overflow-hidden text-2xl sm:text-3xl gap-40 lg:gap-28 flex-grow`}
+        className={`flex flex-col mx-12 md:px-20 lg:px-40 xl:px-[16rem] overflow-hidden text-2xl sm:text-3xl gap-40 lg:gap-28 flex-grow`}
       >
         {/* <Landing /> */}
         <HeroSectionOne />
-        <Info />
+        <About />
         <Skils />
         <Projects />
+        <Archive />
         <Contact />
       </main>
       <Footer />
