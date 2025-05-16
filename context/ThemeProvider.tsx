@@ -15,22 +15,20 @@ function ThemeProvider({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [theme, setTheme] = useState<boolean>(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("theme") === "true";
-    }
-    return true;
-  }); // 게으른 초기화
+  const [theme, setTheme] = useState<boolean | null>(null); // 초기에는 null
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
-    if (storedTheme === "true") {
-      setTheme(true);
+    if (storedTheme !== null) {
+      setTheme(storedTheme === "true");
     } else {
-      setTheme(false);
-      localStorage.setItem("theme", "false");
+      setTheme(true); // 기본값
     }
   }, []);
+
+  if (theme === null) {
+    return null; // hydration 오류 방지를 위해 초기 렌더링을 생략
+  }
 
   return <ThemeContext.Provider value={{ theme, setTheme }}>{children}</ThemeContext.Provider>;
 }
