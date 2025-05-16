@@ -3,8 +3,8 @@
 import { useContext, useState, createContext, useEffect } from "react";
 
 const ThemeContext = createContext<{
-  theme: boolean;
-  setTheme: React.Dispatch<React.SetStateAction<boolean>>;
+  theme: boolean | null;
+  setTheme: React.Dispatch<React.SetStateAction<boolean | null>>;
 }>({
   theme: true,
   setTheme: () => {},
