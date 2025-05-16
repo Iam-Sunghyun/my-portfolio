@@ -7,7 +7,7 @@ interface ProjectProps {
   skills: string[];
   description: string;
   link?: string;
-  theme: boolean;
+  theme: boolean | null;
 }
 
 function Project({ name, image, skills, description, theme }: ProjectProps) {
@@ -25,7 +25,8 @@ function Project({ name, image, skills, description, theme }: ProjectProps) {
             alt={name}
           />
           <p className="text-3xl">{name}</p>
-          <p className="flex justify-center gap-1 flex-wrap">
+
+          <div className="flex justify-center gap-1 flex-wrap">
             {skills.map((skill) => (
               <Card
                 key={skill}
@@ -34,7 +35,7 @@ function Project({ name, image, skills, description, theme }: ProjectProps) {
                 {skill}
               </Card>
             ))}
-          </p>
+          </div>
           <p className="sm:mt-10">{description}</p>
         </div>
 
