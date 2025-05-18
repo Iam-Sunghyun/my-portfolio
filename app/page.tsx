@@ -38,7 +38,7 @@ export default function Home() {
     >
       <NavBar />
       <main
-        className={`flex flex-col mx-12 md:px-20 lg:px-40 xl:px-[16rem] overflow-hidden text-2xl sm:text-3xl gap-40 lg:gap-28 flex-grow`}
+        className={`flex flex-col mx-12 md:px-20 lg:px-40 xl:px-[16rem] overflow-hidden text-2xl sm:text-3xl gap-72 flex-grow`}
       >
         {/* <Landing /> */}
         <HeroSectionOne />

@@ -23,31 +23,32 @@ const Projects = () => {
   return (
     <section id="Projects">
       <HorizentalLine text="Projects" />
-      <div
-        // className="flex flex-col items-center gap-10 text-[1.1rem] mb-24"
-        className="flex flex-col gap-8 mt-20 items-center"
-      >
-        {projects.map((project, index) => (
-          <Link key={project.name} href={`${project.link}`}>
-            <motion.div
-              variants={fadeInAnimationVariants}
-              initial="initial"
-              whileInView={"animate"}
-              // viewport={{ once: true }}
-              transition={{
-                duration: 0.5,
-                delay: index * 0.2,
-                // type: "spring",
-              }}
-            >
-              <Project
-                name={project.name}
-                skills={project.skills}
-                image={project.image}
-                description={project.description}
-                theme={theme}
-              />
-              {/* <Card className="py-8 px-12 hover:border-blue-400 flex flex-col lg:flex-row lg:justify-between ">
+
+      {projects.map((project, index) => (
+        <Link
+          className="flex flex-col mt-10 items-center"
+          key={project.name}
+          href={`${project.link}`}
+        >
+          <motion.div
+            variants={fadeInAnimationVariants}
+            initial="initial"
+            whileInView={"animate"}
+            // viewport={{ once: true }}
+            transition={{
+              duration: 0.5,
+              delay: index * 0.2,
+              // type: "spring",
+            }}
+          >
+            <Project
+              name={project.name}
+              skills={project.skills}
+              image={project.image}
+              description={project.description}
+              theme={theme}
+            />
+            {/* <Card className="py-8 px-12 hover:border-blue-400 flex flex-col lg:flex-row lg:justify-between ">
               <div className="flex flex-col justify-center">
                 <h1 className="mb-5">{project.name}</h1>
                 <Image
@@ -72,10 +73,9 @@ const Projects = () => {
                 </div>
               </div>
             </Card> */}
-            </motion.div>
-          </Link>
-        ))}
-      </div>
+          </motion.div>
+        </Link>
+      ))}
     </section>
   );
 };

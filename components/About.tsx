@@ -24,22 +24,22 @@ function About() {
     <section id="About" className="flex flex-col  gap-10 ">
       <HorizentalLine text="About" />
 
-      <div className="grid sm:grid-cols-2 sm:grid-rows-3 xl:grid-cols-3 xl:grid-rows-2 max-md:gap-10 gap-6 mx-auto mb-20">
-        <div className="flex gap-10 items-center lg:pl-0 xl:pl-12">
+      <div className="grid sm:grid-cols-2 sm:grid-rows-2 max-md:gap-10 gap-8 mx-auto mb-20">
+        <div className="flex gap-10 items-center  xl:pl-12">
           <IoPerson className="text-4xl" />
           <div className="flex flex-col mt-2 items-start gap-1">
             <h3 className="text-lg">이름</h3>
             <span className="text-gray-500 text-xl tracking-wider">전성현</span>
           </div>
         </div>
-        <div className="flex gap-10 items-center md:pl-12">
+        {/* <div className="flex gap-10 items-center md:pl-12">
           <FaBirthdayCake className="text-4xl" />
           <div className="flex flex-col mt-2 items-start gap-1">
             <h3 className="text-lg">생년월일</h3>
             <span className="text-gray-500 text-[1.2rem]">1994. 11. 19</span>
           </div>
-        </div>
-        <div className="flex gap-10 items-center lg:pl-0 xl:pl-12 ">
+        </div> */}
+        {/* <div className="flex gap-10 items-center lg:pl-8 xl:pl-12 ">
           <FaPencilAlt className="text-4xl" />
           <div className="flex flex-col mt-2 items-start gap-1">
             <h3 className="text-lg">학력</h3>
@@ -48,26 +48,26 @@ function About() {
               컴퓨터공학과(졸업)
             </span>
           </div>
-        </div>
-        <div className="flex gap-10 items-center md:pl-12">
+        </div> */}
+        <div className="flex gap-10 items-center xl:pl-12">
           <FaPhone className="text-4xl" />
           <div className="flex flex-col mt-2 items-start gap-1">
             <h3 className="text-lg">연락처</h3>
             <span className="text-gray-500 text-[1.1rem] text-start">010. 1234. 5678</span>
           </div>
         </div>
-        <div className="flex gap-10 items-center lg:pl-0 xl:pl-12">
+        <div className="flex gap-10 items-center xl:pl-12">
           <MdEmail className="text-4xl" />
           <div className="flex flex-col mt-2 items-start gap-1">
             <h3 className="text-lg">이메일</h3>
-            <span className="text-gray-500 text-[1.1rem] ">
+            <span className="text-gray-500 text-[1.1rem] text-start">
               sunghyun1148
               <br />
               @gmail.com
             </span>
           </div>
         </div>
-        <div className="flex gap-10 items-center md:pl-12 ">
+        <div className="flex gap-10 items-center xl:pl-12 ">
           <GiPositionMarker className="text-4xl" />
           <div className="flex flex-col mt-2 items-start gap-1">
             <h3 className="text-lg">위치</h3>
@@ -87,9 +87,9 @@ function About() {
           }}
           className="text-[2.5rem] font-bold mb-5 leading-[1.2]"
         >
-          웹 프론트엔드 선택 이유?
+          <p>Introduce</p>
         </motion.h2>
-        <p className="text-xl">
+        <p className="text-xl text-start max-w-[50rem] mx-auto pl-6">
           인터랙티브 디벨로퍼를 보고 사용자와 상호작용 하는 웹 사이트에 매력을 느껴 프론트엔드
           가기로 마음먹음.
           <br />

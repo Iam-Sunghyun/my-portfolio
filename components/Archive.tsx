@@ -8,20 +8,19 @@ function Archive() {
     <section id="Archive" className="flex flex-col gap-10">
       <HorizentalLine text="Archive" />
 
-      <article>
-        <Link
-          className="hover:text-blue-500 flex items-center gap-2 "
-          href="https://github.com/Iam-Sunghyun"
-          target="_blank"
-        >
-          <Card className="flex-col sm:flex-row items-center text-lg  min-w-[20rem] sm:w-[43rem] sm:h-[24rem] md:w-[50rem] lg:w-[60rem] overflow-hidden  mx-auto">
-            <div className="flex items-center  gap-2">
-              <SiGithub />
-              <p>Github</p>
-            </div>
-          </Card>
-        </Link>
-      </article>
+      <Link
+        className="flex flex-col  items-center"
+        href="https://github.com/Iam-Sunghyun"
+        target="_blank"
+      >
+        <Card className="flex flex-col justify-center text-lg  min-w-[20rem] sm:w-[43rem] sm:h-[14rem] md:w-[50rem] lg:w-[60rem] p-8 hover:border-blue-400 hover:bg-gray-50 gap-10">
+          <div className="flex items-center gap-4 text-[4rem]">
+            <SiGithub />
+            <p>Github</p>
+          </div>
+          <p className="ml-4 text-left text-[1.3rem]">TIL 및 프로젝트 코드 저장소</p>
+        </Card>
+      </Link>
     </section>
   );
 }
