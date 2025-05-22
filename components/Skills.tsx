@@ -15,29 +15,11 @@ const fadeInAnimationVariants: Variants = {
   },
 };
 
-function Skils() {
+function Skills() {
   return (
-    <section id="Skils" className="flex-1">
+    <section id="Skills" className="flex-1">
       <HorizentalLine text="Skills" />
       <div className="text-[1rem] sm:text-[1.1rem] tracking-wider flex flex-col gap-4 items-center">
-        {/* <h2 className="font-bold">Main</h2>
-        <ItemList lists={["HTML5", "CSS3", "JavaScript", "React", "TailwindCSS"]} />
-        <br />
-        <h2 className="font-bold">Learning</h2>
-        <ItemList
-          lists={[
-            "TypeScript",
-            "Nextjs 14",
-            "Redux (RTK)",
-            "Redux-Thunk",
-            "Styled-Component",
-            "css-modules",
-            "React-Router",
-            "React-query",
-            "React-hook-form",
-          ]}
-        /> */}
-
         {/* main */}
         <h1>Main</h1>
         <ul className="flex gap-14 flex-wrap justify-center mt-6">
@@ -94,4 +76,4 @@ function Skils() {
   );
 }
 
-export default Skils;
+export default Skills;

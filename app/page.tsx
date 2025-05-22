@@ -4,7 +4,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import HeroSectionOne from "@/components/Hero-Section";
 import Projects from "@/components/Projects";
-import Skils from "@/components/Skils";
+import Skils from "@/components/Skills";
 import NavBar from "@/components/ui/NavBar";
 import ScrollToTopButton from "@/components/ui/ScrollToTopButton";
 import { useScrolls } from "@/context/ScrollProvider";
@@ -45,7 +45,7 @@ export default function Home() {
         <About />
         <Skils />
         <Projects />
-        <Archive />
+        {/* <Archive /> */}
         <Contact />
       </main>
       <Footer />

@@ -21,33 +21,21 @@ function NavigationBar() {
         }`}
       >
         <div
-          className={`flex gap-10 justify-center text-[1.3rem] tracking-wider pl-2 items-center ${
+          className={`flex gap-10 justify-center text-[1.1rem] tracking-wider pl-2 items-center ${
             theme ? "text-stone-600" : "text-white"
           }`}
         >
-          {/* <Link href="/#Home" className="hidden sm:block hover:scale-105">
-            Home
-          </Link> */}
           <Link href="/#Home" className="sm:hidden hover:scale-110">
             <AiOutlineHome />
           </Link>
-          {/* <Link href="/#Info" className="hidden sm:block hover:scale-105">
-            Info
-          </Link> */}
-          <Link href="/#Info" className="sm:hidden hover:scale-110">
+          <Link href="/#About" className="sm:hidden hover:scale-110">
+            <MdOutlinePersonOutline />
+          </Link>
+          <Link href="/#Skills" className="sm:hidden hover:scale-110">
             <HiOutlineWrench />
           </Link>
-          {/* <Link href="/#Projects" className="hidden sm:block hover:scale-105">
-            Projects
-          </Link> */}
           <Link href="/#Projects" className="sm:hidden hover:scale-110">
             <BiBook />
-          </Link>
-          {/* <Link href="/#Contact" className="hidden sm:block hover:scale-105">
-            Contact
-          </Link> */}
-          <Link href="/#Contact" className="sm:hidden hover:scale-110">
-            <MdOutlinePersonOutline />
           </Link>
         </div>
         <ThemeToggleButton />
