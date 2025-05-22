@@ -10,7 +10,6 @@ import ScrollToTopButton from "@/components/ui/ScrollToTopButton";
 import { useScrolls } from "@/context/ScrollProvider";
 import { useThemes } from "@/context/ThemeProvider";
 import { useEffect } from "react";
-import Archive from "@/components/Archive";
 
 export default function Home() {
   const { theme } = useThemes();
