@@ -5,7 +5,14 @@ export const projects = [
   {
     name: "Music player",
     image: musicPlayerImage,
-    skills: ["React", "Context-API", "css-modules", "Audio Web API", "canvas API"],
+    skills: [
+      "React",
+      "Context-API",
+      "css-modules",
+      "Audio Web API",
+      "canvas API",
+      "react-hot-toast",
+    ],
     description:
       // "오디오 기기 기본 기능",
       // // "- 재생, 정지, 볼륨 조절, 넘기기, 반복 재생 및 셔플",

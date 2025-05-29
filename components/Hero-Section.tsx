@@ -11,7 +11,7 @@ export default function HeroSectionOne() {
     <section className="relative mx-auto mt-28 flex max-w-7xl flex-col items-center justify-center ">
       <div className=" px-4 py-10 md:py-20">
         <h1 className="mt-28 relative z-10 mx-auto max-w-4xl text-center text-4xl font-bold text-gray-800 xs:text-5xl md:text-6xl lg:text-7xl">
-          {"가나다라 마바사 프론트 엔드 개발자 입니다.".split(" ").map((word, index) => (
+          {"성장하는 미래를 그리는 프론트엔드 개발자 입니다.".split(" ").map((word, index) => (
             <motion.span
               key={index}
               initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
@@ -27,7 +27,7 @@ export default function HeroSectionOne() {
             </motion.span>
           ))}
         </h1>
-        {/* <motion.p
+        {/* <motion.div
           initial={{
             opacity: 0,
           }}
@@ -38,11 +38,12 @@ export default function HeroSectionOne() {
             duration: 0.3,
             delay: 0.8,
           }}
-          className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
+          className="relative z-10 mx-auto max-w-xl text-center text-lg font-normal text-neutral-600 dark:text-neutral-400 h-20"
         >
+         
           With AI, you can launch your website in hours, not days. Try our best in class, state of
-          the art, cutting edge AI tools to get your website up.
-        </motion.p> */}
+          the art, cutting edge AI tools to get your website up. 
+        </motion.div> */}
         <motion.div
           initial={{
             opacity: 0,

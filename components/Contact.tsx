@@ -14,7 +14,7 @@ function Contact() {
           target="_blank"
         >
           <Image alt="github" width={25} height={25} src={githubMark} />
-          <p>Github</p>
+          <span>Github</span>
         </Link>
         <Link href={"/"}>Mail</Link>
       </div>

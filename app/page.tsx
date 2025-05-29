@@ -26,7 +26,7 @@ export default function Home() {
       }
     }
     window.onscroll = scrolled;
-  }, [setScroll]); // 페이지 초기 렌더링 시에만 실행
+  }, [setScroll]);
 
   return (
     // 다크모드를 위한 전체 랩핑 div
@@ -37,7 +37,7 @@ export default function Home() {
     >
       <NavBar />
       <main
-        className={`flex flex-col mx-12 md:px-20 lg:px-40 xl:px-[16rem] overflow-hidden text-2xl sm:text-3xl gap-72 flex-grow`}
+        className={`flex flex-col mx-12 md:px-20 lg:px-36 xl:px-[20rem]  overflow-hidden text-2xl sm:text-3xl gap-48 flex-grow`}
       >
         {/* <Landing /> */}
         <HeroSectionOne />

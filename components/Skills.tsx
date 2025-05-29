@@ -40,7 +40,7 @@ function Skills() {
                 <div className="bg-[rgba(237,237,237,0.72)] rounded-full w-[6rem] aspect-square flex justify-center items-center">
                   <Image width={50} height={50} key={icon.name} src={icon.image} alt={icon.name} />
                 </div>
-                <p className="">{icon.name}</p>
+                <span className="">{icon.name}</span>
               </div>
             </motion.li>
           ))}
@@ -66,7 +66,7 @@ function Skills() {
                 <div className="bg-[rgba(237,237,237,0.72)] rounded-full w-[6.5rem] aspect-square flex justify-center items-center">
                   <Image width={50} height={50} key={icon.name} src={icon.image} alt={icon.name} />
                 </div>
-                <p className="leading-6">{icon.name}</p>
+                <span className="leading-6">{icon.name}</span>
               </div>
             </motion.li>
           ))}

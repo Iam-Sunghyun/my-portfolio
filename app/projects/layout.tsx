@@ -17,7 +17,7 @@ function Layout({ children }: { children: React.ReactNode }) {
       {/* <NavigationBar /> */}
       <NavBar />
       <main
-        className={`mx-6 md:px-28 lg:px-40 xl:px-60 2xl:px-96 overflow-hidden text-lg sm:text-xl flex-grow`}
+        className={`mx-6  md:px-28 lg:px-40 xl:px-60 2xl:px-96 overflow-hidden text-lg sm:text-xl flex-grow`}
       >
         {children}
       </main>
