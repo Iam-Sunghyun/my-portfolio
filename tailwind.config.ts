@@ -26,6 +26,7 @@ const config = {
     extend: {
       screens: {
         xs: "520px",
+        "2xl": "1480px",
       },
       colors: {
         black: {

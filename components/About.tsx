@@ -94,7 +94,7 @@ function About() {
         >
           <p className="border-b-2 border-blue-200 inline-block px-4 mx-auto">Introduce</p>
         </motion.h2>
-        <p className="text-xl text-start max-w-[50rem] mx-auto pl-6 leading-9">
+        <p className="text-xl text-start max-w-[50rem] mx-auto sm:pl-6 leading-9">
           {/* 프론트 시작 계기 */}
           &apos;인터랙티브 디벨로퍼&apos;라는 유튜버의 프론트엔드 프로젝트를 보고 사용자와 상호작용
           하는 웹 사이트에 매력을 느껴 웹 프론트엔드 개발자가 되기로 결심했습니다.
@@ -106,8 +106,8 @@ function About() {
           <br />
           <br />
           React와 Nextjs, Tailwind를 이용한 코드 작성에 익숙하며 express 쿠키 세션으로 회원가입.
-          mongodb CRUD, 파이어베이스 인증, 이미지 및 텍스트 저장, 가져오기 수정 등 구현 경험, ejs
-          템플릿 엔진 사용 경험 있음.
+          mongodb CRUD, 파이어베이스 인증, 이미지 및 텍스트 저장, 가져오기, 수정 구현 경험, ejs
+          템플릿 엔진 사용 경험이 있습니다.
           <br />
           <br />
           주로 웹을 통해 공부하지만 책으로 공부하는 것을 선호합니다. Github TIL 레포지토리에 공부한
