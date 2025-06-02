@@ -7,26 +7,10 @@ import Projects from "@/components/Projects";
 import Skils from "@/components/Skills";
 import NavBar from "@/components/ui/NavBar";
 import ScrollToTopButton from "@/components/ui/ScrollToTopButton";
-import { useScrolls } from "@/context/ScrollProvider";
 import { useThemes } from "@/context/ThemeProvider";
-import { useEffect } from "react";
 
 export default function Home() {
   const { theme } = useThemes();
-  const { setScroll } = useScrolls();
-
-  // 페이지 맨 위에서 300픽셀 초과 스크롤되면 scroll = true
-  useEffect(() => {
-    function scrolled() {
-      // 사파리 용 || 크롬, 파폭, IE, 오페라 용 <html> 요소 참조 프로퍼티
-      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        setScroll(true);
-      } else {
-        setScroll(false);
-      }
-    }
-    window.onscroll = scrolled;
-  }, [setScroll]);
 
   return (
     // 다크모드를 위한 전체 랩핑 div
