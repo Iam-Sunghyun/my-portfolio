@@ -8,10 +8,10 @@ export const projects = [
     skills: [
       "React",
       "Context-API",
-      "css-modules",
+      "CSS-modules",
       "Audio Web API",
-      "canvas API",
-      "react-hot-toast",
+      "Canvas API",
+      "React-hot-toast",
     ],
     description:
       // "오디오 기기 기본 기능",
@@ -23,7 +23,7 @@ export const projects = [
       // "음악 목록 출력",
       // "커스텀 프로그레스바",
       // "반응형",
-      "오디오 비주얼라이저 동적 음악 플레이어",
+      "동적 비주얼라이저 음악 플레이어",
 
     link: "projects/music-player",
   },
@@ -35,9 +35,9 @@ export const projects = [
       "Typescript",
       "Context-API",
       "LocalStorage",
-      "tailwindCSS",
+      "TailwindCSS",
       "AceternityUI",
-      "framer-motion",
+      "Framer-motion",
     ],
     description:
       // "다크모드", "랜딩 페이지", "플로팅 네비게이션바", "반응형"

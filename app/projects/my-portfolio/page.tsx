@@ -59,7 +59,7 @@ function Page() {
               ThemeProvider 래퍼 컴포넌트 파일에 Context를 별도로 분리하여 관리. localstorage에
               다크모드 상태 저장하여 새로고침 해도 유지되도록 구현
             </span>
-            <li>동적인 페이지</li>
+            <li>동적인 UI</li>
             <span>
               aceternityUI, framer-motion, transfrom, transition 사용해 동적인 효과를 주어 사용자
               경험을 향상시킴
@@ -75,7 +75,7 @@ function Page() {
               훅을 사용하여 현재 스크롤 위치를 추적하고, 300px 이상 스크롤 시 버튼 활성화, 클릭 시
               페이지 최상단으로 이동
             </span>
-            <li>컴포넌트 재사용</li>
+            {/* <li>컴포넌트 재사용</li> */}
             <li>반응형</li>
           </ul>
         </div>
@@ -101,7 +101,8 @@ function Page() {
             <h3 className="text-blue-600">Solution2</h3>
             <span className="text-blue-700">
               공식 문서를 보며 Link 컴포넌트의 href 속성에 id 값을 사용하여 특정 요소로 연결할 수
-              있다는 것을 알게 되어 해당 방법으로 구현했다.
+              있다는 것을 알게 되어 해당 방법으로 구현하였고 요소의 위치 변화 상관 없이 정확하게
+              이동할 수 있게 되었다.
             </span>
           </div>
         </div>

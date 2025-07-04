@@ -51,12 +51,12 @@ function Page() {
             추가하고 재생하는 기본적인 앱을 만든 후 좀 더 동적으로 만들고 싶어져 비주얼라이저와
             이퀄라이저 기능을 추가하였다.
             <br />
-            구글 검색으로 디자인을 참고했고 기능 구현은 직접 하였다. 가장 익숙하고 많이 사용되는
+            가장 익숙하고 많이 사용되는
             <b> React</b>를 사용해 UI를 구현하였고 <b>css-modules</b>를 사용하여 순수 <b>CSS</b>의
             감을 잃지 않고자 하였다.
             <br />
             개발 과정에서 <b>Web Audio API</b>의 소리 재생 메커니즘과 <b>canvas API</b>의 기본적인
-            기능과 <b>requestAnimationFrame()</b> 사용법을 숙지할 수 있었다.
+            기능, 그리고 <b>requestAnimationFrame()</b> 사용법을 숙지할 수 있었다.
           </p>
         </div>
       </div>
@@ -75,7 +75,9 @@ function Page() {
             </span>
             <li>오디오 이퀄라이저</li>특정 주파수 증폭, 좌우 밸런스 변경, 속도 변경
             <li>음악 추가, 삭제</li>
-            <span>input 요소 및 드래그앤 드롭으로 음악 추가, 음악 리스트는 context로 관리</span>
+            <span>
+              input 요소 클릭 및 드래그앤 드롭으로 음악 추가, 음악 리스트는 context로 관리
+            </span>
             <li>음악 목록 출력</li>
             <li>커스텀 프로그레스바</li>
             <span>시간이 흐름에 따라 바가 움직이고 클릭 시 해당 시간으로 이동</span>
@@ -155,8 +157,8 @@ function Page() {
             <h3 className=" text-blue-600">Solution</h3>
             <span className="text-blue-700">
               음악이 변경될 때마다 useEffect가 실행되어 오디오 컨텍스트와 오디오 요소가 연결되어
-              오디오 소스 노드(MediaElementAudioSourceNode)를 생성했다. 이를 useEffect 내에 조건문을
-              사용해 한번 생성된 뒤엔 실행되지 않도록 수정하였다.
+              오디오 소스 노드(MediaElementAudioSourceNode)를 생성했던 것을 useEffect 내에 조건문을
+              사용해 한번만 생성되도록 수정하였다.
             </span>
           </div>
           <br />

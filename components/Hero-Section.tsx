@@ -11,7 +11,7 @@ export default function HeroSectionOne() {
     <section className="relative mx-auto mt-28 flex max-w-7xl flex-col items-center justify-center ">
       <div className=" px-4 py-10 md:py-20">
         <h1 className="mt-28 relative z-10 mx-auto max-w-4xl text-center text-4xl font-bold text-gray-800 xs:text-5xl md:text-6xl lg:text-7xl">
-          {"성장하는 미래를 그리는 프론트엔드 개발자 입니다.".split(" ").map((word, index) => (
+          {`안녕하세요!👋 프론트엔드 개발자 전성현 입니다.`.split(" ").map((word, index) => (
             <motion.span
               key={index}
               initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
